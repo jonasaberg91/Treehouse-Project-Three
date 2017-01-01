@@ -1,0 +1,146 @@
+* {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/* page specifics ************/
+.main-header {
+	background: #2d3944;
+	color: #ffffff;
+	text-align: center;
+	padding: 1em;
+}
+
+main header {
+	padding: 1em;
+	text-align: center;
+}
+
+main {
+	max-width: 769px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+main p {
+	color: rgba(000,000,000,0.5);
+}
+
+main section {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	padding: 1em;
+	color: rgba(000,000,000,0.5);
+}
+
+/* form ************/
+form {
+	margin: 0;
+	padding: 0;
+	border-top: 6px solid #000;
+}
+
+form fieldset {
+	padding: 0;
+	margin: 8px 0 0 0;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color: #000;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-style: none;
+}
+
+form fieldset legend {
+	float: left;
+	overflow: auto;
+}
+
+legend + p {
+	clear: both;
+}
+
+/* input fields ************/
+::-webkit-input-placeholder { text-align:right; }
+input:-moz-placeholder { text-align:right; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+	-webkit-appearance: none;
+	width: 100%;
+	padding: 1.4em;
+	font-size: 1rem;
+	border-radius: 4px;
+	background: #eff0f1;
+	outline: 0;
+	border: 0;
+}
+
+textarea {
+	min-height: 150px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	border: 3px solid #004e7a;
+}
+
+button {
+	display: block;
+	width: 100%;
+	padding: 1.4em;
+	font-size: 1rem;
+	border-radius: 4px;
+	background: #53bbb4;
+	color: #ffffff;
+	font-size: 1.17rem;
+	outline: 0;
+	border: 0;
+}
+
+/* labels ************/
+
+label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+	display: inline-block;
+	margin-left: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
