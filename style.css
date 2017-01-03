@@ -10,18 +10,10 @@ html, body {
 	padding: 0;
 }
 
-/* page specifics ************/
-.main-header {
-	background: #2d3944;
-	color: #ffffff;
-	text-align: center;
-	padding: 1em;
-}
 
-main header {
-	padding: 1em;
-	text-align: center;
-}
+/***************************************
+page specifics
+***************************************/
 
 main {
 	max-width: 769px;
@@ -29,12 +21,24 @@ main {
 	padding: 0 16px;
 }
 
-main p {
+main header {
+	padding: 1em;
+	text-align: center;
+}
+
+main p,
+main h4 {
+	font-weight: normal;
 	color: rgba(000,000,000,0.5);
 }
 
-main section {
-	text-align: center;
+main .group p {
+	margin: 8px 0;
+}
+
+main #zip {
+	float: left;
+	max-width: 175px;
 }
 
 footer {
@@ -43,7 +47,25 @@ footer {
 	color: rgba(000,000,000,0.5);
 }
 
-/* form ************/
+/***************************************
+main header
+***************************************/
+.main-header {
+	background: #2d3944;
+	color: #ffffff;
+	text-align: center;
+	padding: 1em;
+}
+
+.main-header h1 {
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+
+/***************************************
+form
+***************************************/
 form {
 	margin: 0;
 	padding: 0;
@@ -64,13 +86,21 @@ form fieldset {
 form fieldset legend {
 	float: left;
 	overflow: auto;
-}
+}	
 
 legend + p {
 	clear: both;
 }
 
-/* input fields ************/
+form p:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+	height: 0;
+}
+
 ::-webkit-input-placeholder { text-align:right; }
 input:-moz-placeholder { text-align:right; }
 
@@ -85,8 +115,22 @@ textarea {
 	font-size: 1rem;
 	border-radius: 4px;
 	background: #eff0f1;
-	outline: 0;
 	border: 0;
+}
+
+@media screen and (min-width: 480px) {
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select {
+		width: calc(100% - 120px);
+		float: right;
+	}
+}
+
+select {
+	background: url(arrow.png) no-repeat right #eff0f1;
+	color: rgba(000,000,000,0.5);
 }
 
 textarea {
@@ -96,27 +140,22 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-	border: 3px solid #004e7a;
+	outline-color: #306184;
 }
 
-button {
-	display: block;
-	width: 100%;
-	padding: 1.4em;
-	font-size: 1rem;
-	border-radius: 4px;
-	background: #53bbb4;
-	color: #ffffff;
-	font-size: 1.17rem;
-	outline: 0;
-	border: 0;
-}
 
-/* labels ************/
-
+/***************************************
+labels
+***************************************/
 label {
 	display: block;
 	margin-bottom: 8px;
+}
+@media screen and (min-width: 480px) {
+	label {
+		float: left;
+  		width: 120px;
+	}
 }
 
 input[type="radio"] + label,
@@ -125,20 +164,26 @@ input[type="checkbox"] + label {
 	margin-left: 8px;
 }
 
+.group label {
+	float: none;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/***************************************
+buttons
+***************************************/
+button {
+	display: block;
+	width: 100%;
+	padding: 1.25em;
+	font-size: 1rem;
+	border-radius: 4px;
+	background: #53bbb4;
+	color: #ffffff;
+	font-size: 1.17rem;
+	outline: 0;
+	border: 0;
+}
 
 
 
