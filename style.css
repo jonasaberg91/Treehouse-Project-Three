@@ -75,12 +75,7 @@ form {
 form fieldset {
 	padding: 0;
 	margin: 8px 0 0 0;
-	border-top-style: solid;
-	border-top-width: 2px;
-	border-top-color: #000;
-	border-bottom-style: none;
-	border-left-style: none;
-	border-right-style: none;
+	border-top: 2px solid #000;
 }
 
 form fieldset legend {
